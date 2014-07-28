@@ -1,0 +1,356 @@
+/*!
+ * Sleia v1.0
+ * Main Style Sheet
+ *
+ * Handcrafted with love!
+ */
+
+/* ==========================================================================
+   Let's start the magic
+   ========================================================================== */
+html, body {
+	background: #fff;
+	font-family:'Open Sans', 'Helvetica', sans-serif, Arial;
+	height:100%;
+	width:100%;
+	color:#787878;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+/* ==========================================================================
+   Background
+   ========================================================================== */ 
+.lightgray {
+	background:#f5f5f5;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */ 
+
+/* ==========================================================================
+   Widgets
+   ========================================================================== */ 
+.widget {
+	background:#fff;
+	margin-bottom:30px;
+	box-shadow:0px 2px 1px rgba(0,0,0,0.15);
+}
+
+.widget-title {
+	font-weight:100;
+	padding:10px 12px;
+	font-size:17px;
+	margin:0;
+	border-bottom:3px solid #eaeaea;
+	color:#333;
+}
+
+.widget-content {
+	padding:10px 12px;
+}
+
+.side-nav {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.side-nav li {
+	border-bottom:1px solid #e0e0e0;
+	margin-bottom:1px;
+}
+
+.side-nav li:last-child {
+	border-bottom:0;
+}
+
+.side-nav li.active a {
+	border-left:3px solid #AD5251;
+}
+
+.side-nav li a {
+	display:inline-block;
+	padding:8px 10px;
+	border-left:3px solid #d0d0d0;
+}
+   
+/* ==========================================================================
+   Main Title & Breadcrumbs
+   ========================================================================== */   
+.maintitle {
+	background:#fefefe;
+	border-bottom:1px solid #e0e0e0;
+	padding:25px 0;
+}
+
+.breadcrumb {
+	background:transparent;
+	margin-bottom:3px;
+	padding:0 15px;
+	font-size:13px;
+}
+
+.entry-title {
+	letter-spacing:-2px;
+	word-spacing:5px;
+	text-transform:uppercase;
+	margin:0;
+	padding-top:0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */ 
+.line-through {
+	text-decoration:line-through;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+strong {
+	font-weight:600;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:200;
+}
+
+p {
+	line-height:170%;
+}
+   
+/* ==========================================================================
+   Tables
+   ========================================================================== */ 
+
+/* ==========================================================================
+   Pricing Table
+   ========================================================================== */ 
+
+/* ==========================================================================
+   Blogs / Articles
+   ========================================================================== */ 
+   
+/* ==========================================================================
+   eCommerce
+   ========================================================================== */ 
+.pricelist {
+	
+}
+
+.pricelist label {
+	background:#fafafa;
+	padding:10px 0 10px 30px;
+}
+
+.shop-item-list {
+	background:#fff;
+	box-shadow:0px 2px 1px rgba(0,0,0,0.15);
+	display:block;
+	padding:15px;
+	margin-bottom:30px;
+}
+
+.shop-item-list a {
+	color:#555;
+}
+
+.product-info {
+	border-top:1px dotted #aaa;
+}
+
+.product-info h2 {
+	font-size:15px;
+	color:#444;
+	margin:5px 0;
+}
+
+.product-info .line-through {
+	color:#aaa;
+}
+
+.product-info .product-name {
+	display:block;
+	margin:5px 0;
+}
+
+.product-misc {
+	font-size:12px;
+	text-align:center;
+	padding-top:10px;
+}
+
+
+
+/* ==========================================================================
+   Call to Action
+   ========================================================================== */ 
+.cta {
+	padding:30px 0;
+	z-index:10;
+}
+
+.cta h1, .cta h2, .cta h3, .cta h4, .cta h5, .cta h6 {
+	font-weight:100;
+	margin:0 0 5px;
+}
+
+.cta.dark {
+	background:#333;
+	color:#fff;
+}
+
+.cta.primary {
+	background:#AD5251;
+	color:#fff;
+}
+
+   
+/* ==========================================================================
+   Buttons
+   ========================================================================== */ 
+.btn-primary {
+	border-color:#AD5251;
+	background-color:#AD5251;
+}
+
+/* ==========================================================================
+   Social Media
+   ========================================================================== */ 
+.social {
+	background:#333;
+	color:#fff;
+	display:inline-block;
+	padding:12px;
+	text-align:center;
+	width:40px;
+	height:40px;
+	transition:all ease-in-out 200ms;
+}
+
+.social:hover {
+	background:#555;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */ 
+#footer {
+	padding:30px 0 25px;
+	background:#3a3a3a;
+	color:#9b9b9b;
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:100;
+	margin-bottom:20px;
+}
+
+#footer hr {
+	border-top:1px solid #2a2a2a;
+	border-bottom:1px solid #4a4a4a;
+}
+#footer li {
+	position: relative;
+	padding: 6px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#footer li:after {
+	width: 100%;
+	content: "";
+	border-bottom: 1px solid #1a1a1a;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.copyright {
+	font-size:13px;
+}
+   
+/* ==========================================================================
+   Utilities
+   ========================================================================== */ 
+.block { display:block; }
+.inline-block { display:inline-block; }
+
+.padding-10 { padding-top:10px; padding-bottom:10px; }
+.padding-20 { padding-top:20px; padding-bottom:20px; }
+.padding-30 { padding-top:30px; padding-bottom:30px; }
+
+.margin-10 { margin-bottom:10px !important; }
+.margin-20 { margin-bottom:20px !important; }
+.margin-30 { margin-bottom:30px !important; }
+.margin-40 { margin-bottom:40px !important; }
+.margin-50 { margin-bottom:50px !important; }
+.margin-60 { margin-bottom:60px !important; }
+.margin-70 { margin-bottom:70px !important; }
+   
+/* ==========================================================================
+   Mobile styles
+   ========================================================================== */ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) { 
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+
+/* Desktops and laptops ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+.product-misc {
+	font-size:12px;
+	text-align:center;
+	padding-top:10px;
+	opacity:0;
+	transition:all ease-in-out 200ms;
+}
+
+.shop-item-list:hover .product-misc {
+	opacity:1;
+}
+
+}
+     
+
+/* Large screens ----------- */
+@media (min-width: 1200px) and (max-width: 3000px) {
+.product-misc {
+	font-size:12px;
+	text-align:center;
+	padding-top:10px;
+	opacity:0;
+	transition:all ease-in-out 200ms;
+}
+
+.shop-item-list:hover .product-misc {
+	opacity:1;
+}
+
+}    
+   
+   
+     
