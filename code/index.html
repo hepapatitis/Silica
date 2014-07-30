@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/yamm.css">
   <link rel="stylesheet" href="css/custom-styles.css">
   
   <script src="js/modernizr-2.7.1.js"></script>
@@ -63,20 +64,50 @@
 			<!-- /Top Bar -->
 			
 			<!-- Top Nav -->
-			<header id="topBar">
-				<div class="container">
-					<!-- Mobile Menu Button -->
-					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-						<i class="fa fa-bars"></i>
-					</button>
-					
-					<!-- Search -->
-					<form class="search" method="get" action="search.html">
-						<input type="text" class="form-control" name="s" value="" placeholder="Search">
-						<button class="fa fa-search"></button>
-					</form>
-					<!-- /Search -->
-				</div>
+			<header id="topNav" class="top-navigation">
+				<nav class="navbar yamm navbar-silica" role="navigation">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<div class="yamm-content">
+												<div class="row"> 
+													<div class="col-sm-6">
+														Ufufu
+													</div>
+													<div class="col-sm-6">
+														Fufu
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<form class="navbar-form navbar-right" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+							</form>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
 			</header>
 			<!-- /Top Nav -->
 		</div>
@@ -218,17 +249,216 @@
 						<div class="widget">
 							<h3 class="widget-title">Price</h3>
 							<div class="pricelist">
-								<label class="radio">
+								<label class="radio silica-radio">
 									<input type="radio" name="radio" checked="checked">
 									<i></i> Any Price
 								</label>
-								<label class="radio">
+								<label class="radio silica-radio">
 									<input type="radio" name="radio">
 									<i></i> $0 - $50
 								</label>
 							</div>
 						</div>
 						
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-9 col-sm-8">
+						<div class="white-paper">
+							<article>
+								<header class="clearfix">
+									<span class="date">
+										29 <small>JUN 2014</small>
+									</span>
+							
+									<a href="#"><h2 class="article-title">This is a <span>sample</span> post</h2></a>
+									
+									<div class="article-misc">
+										<div>Written by <a href="#">John Doe</a></div>
+										<div>Posted in <a href="#">eCommerce</a></div>
+									</div>
+								</header>
+								<hr />
+								<p>Aliquam dictum nibh eu vulputate varius. Curabitur sit amet iaculis tortor, vel tempus neque. Duis quis aliquam mi, eu tristique sapien. Ut ipsum nibh, fringilla in mi et, feugiat venenatis tortor. Nunc vulputate porta volutpat. Nullam ac consectetur felis. In ut tellus nec turpis pulvinar interdum. Pellentesque non lacus condimentum, auctor magna nec, egestas ligula. Donec at purus luctus, sagittis eros in, molestie felis.</p>
+								<p>Cras congue et augue et accumsan. Mauris in nisi sit amet arcu elementum imperdiet ut sed libero. Nam malesuada sed purus et auctor. Etiam semper neque ligula, eget aliquet justo commodo quis. Donec facilisis rutrum leo ac dignissim. Pellentesque nec quam quis lorem molestie semper nec sit amet lacus. Sed vitae accumsan risus.</p>
+								<p>Suspendisse imperdiet, mi eu faucibus pharetra, felis quam vestibulum elit, et tempus lacus purus sit amet ante. Nullam feugiat mi ac erat aliquam vulputate. Aenean facilisis tortor vel ipsum varius, vel commodo eros tempor. Maecenas leo dui, facilisis ac congue vel, rutrum in nulla. Mauris cursus sollicitudin odio eu interdum. Praesent placerat purus at risus luctus sodales. Duis hendrerit ante dolor, et sodales metus pulvinar eu.</p>
+								<p>Mauris hendrerit, odio eu auctor dapibus, turpis nulla consequat mi, varius feugiat dolor ligula vel velit. Vivamus eu volutpat nunc. Cras vitae diam eu mauris eleifend eleifend. Fusce vehicula dictum nibh eu elementum. Mauris pretium dui tortor, eu interdum neque vulputate sit amet. Nunc in fringilla velit. Maecenas elementum eros in ligula accumsan facilisis.</p>
+							</article>
+							
+							<hr />
+							
+							<p> Tags:
+								<a class="tag label label-default light" href="#"><i class="fa fa-tags"></i> Business</a> 
+								<a class="tag label label-default light" href="#"><i class="fa fa-tags"></i> Design</a> 
+								<a class="tag label label-default light" href="#"><i class="fa fa-tags"></i> Technology</a> 
+							</p>
+						</div>
+						
+						<!-- Author -->
+						<h3>About the Author</h3>
+						<div class="white-paper">
+							<!-- user-avatar -->
+							<span class="user-avatar">
+								<img class="pull-left media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+							</span>
+
+							<div class="media-body">
+								<h4 class="media-heading bold">John Doe</h4>
+								Lorem ipsum dolor sit amet, in pri offendit ocurreret. Vix sumo ferri an. pfs adodio fugit delenit ut qui. Omittam suscipiantur ex vel,ex audiam intellegat gfIn labitur discere eos, nam an feugiat voluptua. Lorem ipsum dolor sit amet, in pri offendit ocurreret. Vix sumo ferri an. pfs adodio fugit delenit ut qui
+							</div>
+						</div>
+						
+						<!-- Comment -->
+						<div class="white-paper">
+							<div id="comments">
+								<h3>3 Comments</h3>
+
+								<!-- comment item -->
+								<div class="comment">
+
+									<!-- user-avatar -->
+									<span class="user-avatar">
+										<img class="pull-left media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+									</span>
+
+									<div class="media-body">
+										<a href="#commentForm" class="scrollTo replyBtn">reply</a>
+										<h4 class="media-heading bold">John Doe</h4>
+										<small class="block">June 29, 2014 - 11:23</small>
+										Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									</div>
+								</div>
+
+								<!-- comment item -->
+								<div class="comment">
+
+									<!-- user-avatar -->
+									<span class="user-avatar">
+										<img class="pull-left media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+									</span>
+
+									<div class="media-body">
+										<a href="#commentForm" class="scrollTo replyBtn">reply</a>
+										<h4 class="media-heading bold">Diana Doe</h4>
+										<small class="block">June 29, 2014 - 11:23</small>
+										Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									</div>
+								</div>
+
+								<!-- comment item -->
+								<div class="comment">
+
+									<!-- user-avatar -->
+									<span class="user-avatar">
+										<img class="media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+									</span>
+
+									<div class="media-body">
+										<a href="#commentForm" class="scrollTo replyBtn">reply</a>
+										<h4 class="media-heading bold">Melissa Doe</h4>
+										<small class="block">June 29, 2014 - 11:23</small>
+										Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+										<!-- comment reply -->
+										<div class="media">
+
+											<!-- user-avatar -->
+											<span class="user-avatar">
+												<img class="media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+											</span>
+
+											<div class="media-body">
+												<h4 class="media-heading bold">Peter Doe</h4>
+												<small class="block">June 29, 2014 - 11:23</small>
+												Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+											</div>
+										</div>
+
+									</div>
+								</div>
+								
+								<!-- comment item -->
+								<div class="comment">
+
+									<!-- user-avatar -->
+									<span class="user-avatar">
+										<img class="pull-left media-object" src="assets/demo/images/avatar.png" width="64" height="64" alt="">
+									</span>
+
+									<div class="media-body">
+										<a href="#commentForm" class="scrollTo replyBtn">reply</a>
+										<h4 class="media-heading bold">Diana Doe</h4>
+										<small class="block">June 29, 2014 - 11:23</small>
+										Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									</div>
+								</div>
+
+								<hr>
+
+
+								<!-- COMMENT FORM -->
+								<form action="#" method="post" class="sky-form boxed">
+									<header>Leave a reply</header>
+										
+									<fieldset>					
+										<div class="row">
+											<section class="col-md-4">
+												<label class="label">Name</label>
+												<label class="input">
+													<i class="icon-append fa fa-user"></i>
+													<input type="text">
+												</label>
+											</section>
+											<section class="col-md-4">
+												<label class="label">E-mail</label>
+												<label class="input">
+													<i class="icon-append fa fa-envelope"></i>
+													<input type="email">
+												</label>
+											</section>
+											<section class="col-md-4">
+												<label class="label">Website</label>
+												<label class="input">
+													<i class="icon-append fa fa-globe"></i>
+													<input type="url">
+												</label>
+											</section>
+										</div>
+										
+										<section>
+											<label class="label">Comment</label>
+											<label class="textarea">
+												<i class="icon-append fa fa-comments"></i>
+												<textarea class="form-control" rows="4"></textarea>
+											</label>
+											<div class="note">You may use these HTML tags and attributes: &lt;a href="" title=""&gt;, &lt;abbr title=""&gt;, &lt;acronym title=""&gt;, &lt;b&gt;, &lt;blockquote cite=""&gt;, &lt;cite&gt;, &lt;code&gt;, &lt;del datetime=""&gt;, &lt;em&gt;, &lt;i&gt;, &lt;q cite=""&gt;, &lt;strike&gt;, &lt;strong&gt;.</div>
+										</section>
+									</fieldset>
+									
+									<footer>
+										<button type="submit" class="btn btn-primary">Add comment</button>
+									</footer>
+								</form>
+								<!-- /COMMENT FORM -->
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-4">
+						<div class="widget">
+							<div class="widget-content">
+								<form role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search">
+										<div class="input-group-btn">
+											<button type="button" class="btn btn-default dropdown-toggle"><i class="fa fa-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			
@@ -240,7 +470,7 @@
 				<div class="row">
 
 					<div class="col-md-9"><!-- title + shortdesc -->
-						<h3>Does Sleia Convinced you?</h3>
+						<h3>Does Silica Convinced you?</h3>
 						<p>If so, click to buy now, including <strong>lifetime upgrade</strong> for free!</p>
 					</div>
 
@@ -344,7 +574,7 @@
 
 			<div class="copyright">
 				<div class="container text-center">
-					Sleia &copy; 2014 • All Right Reserved
+					Silica &copy; 2014 • All Right Reserved
 				</div>
 			</div>
 		</footer>

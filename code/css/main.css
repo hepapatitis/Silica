@@ -16,8 +16,14 @@ html, body {
 	color:#787878;
 }
 
+a {
+	color:#AD5251;
+	transition:all ease-in-out 200ms;
+}
+
 a:hover {
 	text-decoration:none;
+	color:#000;
 }
 
 
@@ -31,6 +37,49 @@ a:hover {
 /* ==========================================================================
    Navigation
    ========================================================================== */ 
+.top-navigation {
+	border-bottom:1px solid #eaeaea;
+	border-top:1px solid #eaeaea;
+}
+
+.navbar-silica {
+	margin-bottom:0;
+	border:0;
+}
+
+.navbar-silica .container > .navbar-header,
+.navbar-silica .container-fluid > .navbar-header,
+.navbar-silica .container > .navbar-collapse,
+.navbar-silica .container-fluid > .navbar-collapse {
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+.navbar-silica .nav > li > a {
+	border-bottom:2px solid transparent;
+	font-weight:100;
+	color:#888;
+	text-transform:uppercase;
+	transition:all ease-in-out 200ms;
+}
+
+.navbar-silica .navbar-nav > li > a {
+	padding:15px 30px;
+	border-left:1px solid #eaeaea;
+}
+
+.navbar-silica .navbar-nav > li:last-child > a {
+	border-right:1px solid #eaeaea;
+}
+
+.navbar-silica .nav > li > a:hover,
+.navbar-silica .nav > li > a:focus {
+	text-decoration: none;
+	background:transparent;
+	color:#333;
+	border-color:#eaeaea;
+	border-bottom:2px solid #AD5251;
+}
 
 /* ==========================================================================
    Widgets
@@ -84,7 +133,7 @@ a:hover {
    ========================================================================== */   
 .maintitle {
 	background:#fefefe;
-	border-bottom:1px solid #e0e0e0;
+	border-bottom:3px solid #e0e0e0;
 	padding:25px 0;
 }
 
@@ -110,11 +159,7 @@ a:hover {
 	text-decoration:line-through;
 }
 
-.bold {
-	font-weight:bold;
-}
-
-strong {
+.bold, strong {
 	font-weight:600;
 }
 
@@ -135,21 +180,108 @@ p {
    ========================================================================== */ 
 
 /* ==========================================================================
+   Form
+   ========================================================================== */ 
+label {
+	font-weight:normal;
+	cursor:pointer;
+}
+
+
+/* ==========================================================================
    Blogs / Articles
    ========================================================================== */ 
+.white-paper {
+	background:#fff;
+	box-shadow:0px 2px 1px rgba(0,0,0,0.15);
+	display:block;
+	padding:25px;
+	margin-bottom:30px;
+}
+
+.article-title {
+	text-transform:uppercase;
+	letter-spacing:-1.5px;
+	margin-top:0;
+}
+
+.article-misc {
+	font-size:12px;
+}
+
+.article-misc div {
+	margin:3px 0;
+}
+
+.date {
+	display:inline-block;
+	background:#AD5251;
+	color:#fff;
+	font-size:45px;
+	padding:10px;
+	margin:0 15px 0 0;
+	font-weight:100;
+	text-align:center;
+	line-height:100%;
+	width:90px;
+	float:left;
+}
+
+.date small {
+	display:block;
+	font-size:14px;
+	line-height:100%;
+}
+
+
+/* ==========================================================================
+   Comments
+   ========================================================================== */ 
+.comment {
+	margin-top:20px;
+	margin-bottom:30px;
+}
+   
+.user-avatar {
+	float:left;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	background:#aaa;
+	text-align:center;
+	display:inline-block;
+}
+
+.user-avatar img {
+	max-width:100%;
+	text-align:center;
+	display:inline-block;
+}
+
+.replyBtn {
+	float:right;
+}
+
+.media-heading {
+	letter-spacing:-0.5px;
+}
+
+.media-body {
+	padding-left:15px;
+	line-height:165%;
+}
+
+.media-body:after {
+	clear:both;
+}
    
 /* ==========================================================================
    eCommerce
    ========================================================================== */ 
-.pricelist {
-	
-}
-
 .pricelist label {
-	background:#fafafa;
-	padding:10px 0 10px 30px;
+	padding:5px 15px;
 }
-
+   
 .shop-item-list {
 	background:#fff;
 	box-shadow:0px 2px 1px rgba(0,0,0,0.15);
@@ -236,7 +368,7 @@ p {
 }
 
 .social:hover {
-	background:#555;
+	background:#AD5251;
 	color:#fff;
 	text-decoration:none;
 }
@@ -274,6 +406,10 @@ p {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+#footer a:hover {
+	color:#fff;
 }
 
 .copyright {
